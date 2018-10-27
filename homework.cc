@@ -186,7 +186,6 @@ int _strncmp( const char* s1, const char* s2, int n) {
 void _strncat (char* s1, const char *s2, int n) {
   int i = 0;
   int len = _strlen (s1);
-  int len2 = _strlen (s2);
   while (s2[i] != '\0' && i < n) {
     s1[i + len] = s2[i];
     i++;
